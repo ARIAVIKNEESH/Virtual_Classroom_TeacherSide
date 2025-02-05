@@ -1,0 +1,148 @@
+.livesession-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.livesession-title {
+  font-size: 2rem;
+  color: #006064;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.livesession-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.livesession-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.livesession-label {
+  font-size: 1rem;
+  color: #004d40;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.livesession-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #004d40;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #004d40;
+  box-shadow: 2px 2px 0 #b2dfdb;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.livesession-input:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 #004d40, 0px 0px 5px rgba(0, 77, 64, 0.5);
+}
+
+.livesession-submit-button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #26c6da, #00acc1);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.2s ease-in-out, background 0.3s ease;
+}
+
+.livesession-submit-button:hover {
+  background: linear-gradient(135deg, #00acc1, #00838f);
+  transform: scale(1.05);
+}
+
+.livesession-create-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffab91, #ff7043);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out, background 0.3s ease;
+}
+
+.livesession-create-button:hover {
+  background: linear-gradient(135deg, #ff7043, #f4511e);
+  transform: scale(1.05);
+}
+
+.livesession-sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.livesession-session-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #a7ffeb, #64ffda);
+  color: #004d40;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.livesession-session-button {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #26a69a, #00897b);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.livesession-session-button:hover {
+  background: linear-gradient(135deg, #00897b, #00695c);
+}
+
+.livesession-link-button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ffd180, #ffab40);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, background 0.3s ease;
+}
+
+.livesession-link-button:hover {
+  background: linear-gradient(135deg, #ffab40, #ff9100);
+  transform: scale(1.05);
+}
+
+.livesession-no-sessions {
+  font-size: 1rem;
+  color: #004d40;
+  text-align: center;
+}

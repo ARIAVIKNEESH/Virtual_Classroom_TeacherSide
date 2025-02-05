@@ -1,0 +1,41 @@
+#home-container {
+    max-width: 100%;
+    margin: auto;
+    background-color: #478cd1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #home-welcome-message {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  #home-logout-button,
+  #home-profile-button {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  #home-logout-button {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  #home-profile-button {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  #home-logout-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  #home-profile-button:hover {
+    background-color: #5a6268;
+    border-color: #5a6268;
+  }
+  

@@ -1,0 +1,113 @@
+.assessments-display-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.assessments-display-page__post-btn {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1.25rem;
+  background-color: #006bb3;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.assessments-display-page__post-btn .icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.assessments-display-page__post-btn:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.assessments-display-page__post-btn:hover .icon {
+  transform: translateX(4px);
+}
+
+.assessments-display-page__post-btn::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+.assessments-display-page__post-btn:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  60% {
+    left: 100%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.assessments-display-page__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.assessments-display-page__box {
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-left: 5px solid #006bb3; 
+}
+
+.assessments-display-page__box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.assessments-display-page__name {
+  font-size: 1.2em;
+  color: #333333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.assessments-display-page__date,
+.assessments-display-page__time {
+  font-size: 0.9em;
+  color: #555555;
+  margin: 4px 0;
+}

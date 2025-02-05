@@ -1,0 +1,83 @@
+.add-course__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background-color: #f3e2dd;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.add-course__title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.add-course__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.add-course__label {
+  font-size: 1em;
+  font-weight: 500;
+  color: #555555;
+}
+
+.add-course__input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+  transition: border-color 0.3s ease;
+  width: 100%;
+}
+
+.add-course__input:focus {
+  border-color: #006bb3;
+  outline: none;
+}
+
+.add-course__submit-btn {
+  padding: 12px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #006bb3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.add-course__submit-btn:hover {
+  background-color: #005a99;
+  transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+  .add-course__wrapper {
+    padding: 20px;
+  }
+
+  .add-course__title {
+    font-size: 1.5em;
+  }
+
+  .add-course__input {
+    font-size: 0.9em;
+  }
+
+  .add-course__submit-btn {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,192 @@
+/* Ensure the outer container is wider */
+
+
+.profile-card {
+  width: 50%; 
+  background-color: #d26969;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Hover effect on the card */
+.profile-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Profile title */
+#profile-title {
+  font-size: 28px; /* Slightly larger title font */
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Profile label and input styles */
+.profile-label {
+  font-size: 16px; /* Slightly larger font size */
+  font-weight: 500;
+  color: #4a5568;
+  margin-bottom: 6px;
+}
+
+.profile-value {
+  font-size: 16px;
+  color: #2d3748;
+  background-color: #edf2f7;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.profile-input,
+.profile-textarea,
+.profile-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  background-color: #f7fafc;
+  color: #2d3748;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.profile-input:focus,
+.profile-textarea:focus,
+.profile-select:focus {
+  border-color: #4299e1;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(66, 153, 225, 0.2);
+}
+
+.profile-textarea {
+  resize: none;
+  height: 80px;
+}
+
+.profile-row {
+  margin-bottom: 20px; /* Adjust row spacing */
+}
+
+/* Button styles */
+#profile-edit-button,
+#profile-save-button {
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#profile-edit-button {
+  background-color: #3182ce;
+}
+
+#profile-edit-button:hover {
+  background-color: #2b6cb0;
+  transform: translateY(-1px);
+}
+
+#profile-save-button {
+  background-color: #38a169;
+  margin-left: 10px;
+}
+
+#profile-save-button:hover {
+  background-color: #2f855a;
+  transform: translateY(-1px);
+}
+
+/* Sidebar styles (if applicable) */
+.sidebar {
+  background-color: #2d3748;
+  padding-top: 20px;
+  color: #ffffff;
+  min-height: 100vh;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+  color: #e2e8f0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #4a5568;
+}
+/* General styling for the profile container */
+#profile-container {
+  background: #f5f5f5; /* Light gray background */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in effect to fields */
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+  opacity: 0; /* Start as invisible */
+}
+
+/* Title fade-in effect */
+.fade-in-title {
+  animation-delay: -1s;
+}
+
+/* Card styling */
+.profile-card {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Labels and fields */
+.profile-label {
+  font-weight: bold;
+}
+
+.profile-value {
+  font-size: 1rem;
+  color: #555;
+}
+
+.profile-input,
+.profile-select,
+.profile-textarea {
+  font-size: 1rem;
+}

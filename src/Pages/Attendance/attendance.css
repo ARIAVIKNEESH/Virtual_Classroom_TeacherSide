@@ -1,0 +1,207 @@
+/* General Container and Layout */
+.attendance-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  max-width: 1200px;
+  margin: 50px auto;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  gap: 30px;
+}
+
+/* Left Section */
+.attendance-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.attendance-search {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attendance-input {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.attendance-input:focus {
+  border-color: #1abc9c;
+}
+
+.attendance-results {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.attendance-search-result {
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.attendance-search-result:hover {
+  background-color: #f0f8f5;
+}
+
+/* Selected Students Section */
+.attendance-selected {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.attendance-selected h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.attendance-selected-student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.attendance-selected-student:last-child {
+  border-bottom: none;
+}
+
+.attendance-remove-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.attendance-remove-button:hover {
+  background-color: #c0392b;
+}
+
+/* Right Section - Attendance Form */
+.attendance-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.attendance-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.attendance-form-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.attendance-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.attendance-form label input,
+.attendance-form label select {
+  margin-top: 5px;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.attendance-form label input:focus,
+.attendance-form label select:focus {
+  border-color: #1abc9c;
+}
+
+/* Periods */
+.attendance-period {
+  margin-top: 10px;
+}
+
+.attendance-select {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Stylish Buttons */
+.attendance-submit-button {
+  position: relative;
+  padding: 12px 25px;
+  background-color: #1abc9c;
+  border-radius: 9999px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  align-self: center;
+}
+
+.attendance-submit-button:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.attendance-submit-button::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.8), transparent 70%);
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+.attendance-submit-button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+/* Keyframes for Shine Animation */
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 100%;
+  }
+}

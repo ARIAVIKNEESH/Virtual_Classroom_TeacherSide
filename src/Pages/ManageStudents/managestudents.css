@@ -1,0 +1,103 @@
+.manage-students__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: #f3e2dd;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.manage-students__title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.manage-students__label {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.manage-students__input, .manage-students__select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 2px 2px 0 #e19c5d;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.manage-students__input:focus, .manage-students__select:focus {
+  border-color: #e19c5d;
+  box-shadow: 2px 2px 0 #e19c5d, 0px 0px 5px rgba(225, 156, 93, 0.5);
+}
+
+.manage-students__subject-input, .manage-students__attendance-input {
+  width: 48%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 2px 2px 0 #e19c5d;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.manage-students__subject-input:focus, .manage-students__attendance-input:focus {
+  border-color: #e19c5d;
+  box-shadow: 2px 2px 0 #e19c5d, 0px 0px 5px rgba(225, 156, 93, 0.5);
+}
+
+.manage-students__add-btn {
+  background-color: #e19c5d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.manage-students__add-btn:hover {
+  background-color: #d28b4f;
+}
+
+.manage-students__submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #e19c5d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.manage-students__submit-btn:hover {
+  background-color: #d28b4f;
+}
+
+.input-group{
+  width:440px;
+}

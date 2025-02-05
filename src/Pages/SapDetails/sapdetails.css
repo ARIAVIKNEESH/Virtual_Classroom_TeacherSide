@@ -1,0 +1,58 @@
+.sapdetails-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sapdetails-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sapdetails-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sapdetails-cell {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .sapdetails-label {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  .sapdetails-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .sapdetails-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .sapdetails-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .sapdetails-button:hover {
+    background-color: #0056b3;
+  }
+  

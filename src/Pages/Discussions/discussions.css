@@ -1,0 +1,142 @@
+/* discussions.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.discussions-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #5a67d8;
+}
+
+.error-message {
+  color: #e53e3e;
+  background: #fef2f2;
+  border: 1px solid #feb2b2;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.discussions-input,
+.discussions-edit-input,
+.discussions-reply-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #d2d6dc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.discussions-input:focus,
+.discussions-edit-input:focus,
+.discussions-reply-input:focus {
+  outline: none;
+  border-color: #5a67d8;
+  box-shadow: 0 0 5px rgba(90, 103, 216, 0.4);
+}
+
+.discussions-add-button,
+.discussions-edit-button,
+.discussions-cancel-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px 5px 5px 0;
+}
+
+.discussions-add-button {
+  background-color: #5a67d8;
+  color: white;
+}
+
+.discussions-add-button:hover {
+  background-color: #4348a5;
+}
+
+.discussions-edit-button {
+  background-color: #48bb78;
+  color: white;
+}
+
+.discussions-edit-button:hover {
+  background-color: #389066;
+}
+
+.discussions-cancel-button {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.discussions-cancel-button:hover {
+  background-color: #c53030;
+}
+
+.discussions-message-container {
+  background: #f7fafc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.discussions-message {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #2d3748;
+}
+
+.discussions-replies-container {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.discussions-reply {
+  font-size: 14px;
+  color: #4a5568;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  border-left: 3px solid #d2d6dc;
+}
+
+.discussions-reply-input {
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .discussions-container {
+    padding: 15px;
+  }
+
+  .discussions-input,
+  .discussions-edit-input,
+  .discussions-reply-input {
+    width: 100%;
+  }
+
+  .discussions-add-button,
+  .discussions-edit-button,
+  .discussions-cancel-button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
